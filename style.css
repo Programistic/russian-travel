@@ -11,7 +11,7 @@
   min-width: 768px;
 
   margin: 0 auto;
-  padding: 48px;
+  padding: 0 48px;
 
   box-sizing: border-box;
 }
@@ -139,6 +139,8 @@
   justify-items: start;
 
   min-width: 288px;
+
+  margin: 0 0 92px;
 }
 
 .description__title {
@@ -171,7 +173,7 @@
   grid-column: 2 / -2;
   grid-row: 3 / 4;
 
-  margin: 0 0 92px;
+  margin: 0;
   padding: 0;
 
   list-style-type: none;
@@ -196,9 +198,8 @@
 /* общие стили для секций */
 .place {
   display: grid;
-  grid-template-columns: minmax(0, 100px) minmax(320px, 460px) minmax(320px, 484px) minmax(0, 100px);
+  grid-template-columns: minmax(0, 100px) minmax(320px, 460px) minmax(28px, 40px) minmax(320px, 484px) minmax(0, 100px);
   grid-template-rows: repeat(2, min-content);
-  column-gap: 40px;
   row-gap: 48px;
 
   margin: 0 0 80px;
@@ -219,7 +220,7 @@
 }
 
 .place__text {
-  grid-column: 3 / -2;
+  grid-column: 4 / -2;
   grid-row: 2 / 3;
 
   min-width: 484px;
@@ -235,7 +236,7 @@
 }
 
 .place__link {
-  grid-column: 3 / -2;
+  grid-column: 4 / -2;
   grid-row: 1 / 2;
   align-self: end;
 }
