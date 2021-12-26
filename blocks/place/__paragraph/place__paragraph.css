@@ -1,0 +1,20 @@
+.place__paragraph {
+  margin: 0 0 26px;
+  padding: 0;
+
+  color: #fff;
+
+  font: 400 18px/29.34px 'Inter', sans-serif;
+}
+
+.place__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .place__paragraph {
+    margin-bottom: 25px;
+  
+    font: 400 16px/26.08px 'Inter', sans-serif;
+  }
+}

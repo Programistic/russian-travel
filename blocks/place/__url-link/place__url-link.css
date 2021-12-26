@@ -1,0 +1,11 @@
+.place__url-link {
+  color: #fff;
+
+  font: 400 18px/22px 'Inter', sans-serif;
+
+  transition: opacity 0.15s ease;
+}
+
+.place__url-link:hover {
+  opacity: 0.7;
+}

@@ -22,3 +22,14 @@
 @import url(../blocks/description/__list-item/description__list-item.css);
 @import url(../blocks/description/__image-gallery/description__image-gallery.css);
 
+/* Стили для place */
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__text/place__text.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);
+@import url(../blocks/place/__link/place__link.css);
+@import url(../blocks/place/__url-heading/place__url-heading.css);
+@import url(../blocks/place/__url-link/place__url-link.css);
+@import url(../blocks/place/__image/place__image.css);
+
+
