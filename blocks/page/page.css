@@ -24,3 +24,7 @@
   src: url(../../fonts/Inter-Black.woff2) format("woff2"),
        url(../../fonts/Inter-Black.woff) format("woff");
 }
+
+.page {
+  background-color: #2a2c2f;
+}
