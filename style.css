@@ -21,129 +21,20 @@
 /* стили для header */
 
 /* стили для description */
-.description {
-  display: flex;
-  flex-direction: column;
 
-  margin: 0 auto;
-  padding: 92px 48px 0;
-}
 
-@media screen and (max-width: 1023px) {
-  .description {
-    padding: 88px 24px 0;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .description {
-    padding: 64px 16px 0;
-  }
-}
 
-.description__title {
-  margin: 0 0 40px;
-  padding: 0;
 
-  color: #fff;
 
-  font: 900 54px/58px 'Inter', sans-serif;
-}
 
-@media screen and (min-width: 1280px) {
-  .description__title {
-    padding-left: 100px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .description__title {
-    font: 900 32px/35px 'Inter', sans-serif;
-  }
-}
 
-.description__text {
-  max-width: 690px;
 
-  margin: 0 0 33px;
-  padding: 0;
 
-  color: #fff;
 
-  font: 400 16px/26.08px 'Inter', sans-serif;
-}
 
-@media screen and (min-width: 1280px) {
-  .description__text {
-    padding-left: 100px;
-  }
-}
-
-.description__list {
-  margin: 0 0 92px; 
-  padding: 0;
-
-  list-style-type: none;
-}
-
-@media screen and (min-width: 1280px) {
-  .description__list {
-    padding-left: 100px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .description__list {
-    margin-bottom: 88px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .description__list {
-    margin-bottom: 64px;
-  }
-}
-
-.description__list-item {
-  color: #fff;
-
-  font: 400 12px/18px 'Inter', sans-serif;
-}
-
-.image-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, calc((100% - 48px) / 4));
-  gap: 16px;
-
-  padding-bottom: 12px;
-}
-
-@media screen and (max-width: 1279px) {
-  .image-gallery {
-    grid-template-columns: repeat(3, calc((100% - 28px) / 3));
-    gap: 14px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .image-gallery {
-    grid-template-columns: repeat(2, calc((100% - 16px) / 2));
-    gap: 16px;
-
-    padding-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .image-gallery {
-    grid-template-columns: 100%;
-    row-gap: 12px;
-
-    padding-bottom: 14px;
-  }
-}
-
-.image-gallery__item {
+.image {
   width: 100%;
 }
 

@@ -1,0 +1,32 @@
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - 48px) / 4));
+  gap: 16px;
+
+  padding-bottom: 12px;
+}
+
+@media screen and (max-width: 1279px) {
+  .image-gallery {
+    grid-template-columns: repeat(3, calc((100% - 28px) / 3));
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, calc((100% - 16px) / 2));
+    gap: 16px;
+
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image-gallery {
+    grid-template-columns: 100%;
+    row-gap: 12px;
+
+    padding-bottom: 14px;
+  }
+}

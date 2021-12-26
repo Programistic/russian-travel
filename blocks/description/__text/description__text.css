@@ -1,0 +1,22 @@
+.description__text {
+  max-width: 690px;
+
+  margin: 0 0 33px;
+  padding: 0;
+
+  color: #fff;
+
+  font: 400 16px/26.08px 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 1280px) {
+  .description__text {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .description__text {
+    max-width: none;
+  }
+}

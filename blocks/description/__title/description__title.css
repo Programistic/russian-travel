@@ -1,0 +1,26 @@
+.description__title {
+  margin: 0 0 40px;
+  padding: 0;
+
+  color: #fff;
+
+  font: 900 54px/58px 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 1280px) {
+  .description__title {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .description__title {
+    font: 900 32px/35px 'Inter', sans-serif;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .description__title {
+    max-width: 250px;
+  }
+}
