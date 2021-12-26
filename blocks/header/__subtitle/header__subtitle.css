@@ -1,0 +1,28 @@
+.header__subtitle {
+  max-width: 640px;
+
+  margin: 32px 0 64px;
+  padding: 0;
+
+  text-align: center;
+
+  color: #fff;
+
+  font: 400 30px/36px 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__subtitle {
+    margin: 32px 0 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__subtitle {
+    max-width: 288px;
+
+    margin: 16px 0 40px;
+
+    font: 400 16px/20px 'Inter', sans-serif;
+  }
+}
