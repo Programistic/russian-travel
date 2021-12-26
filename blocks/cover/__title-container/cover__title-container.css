@@ -1,0 +1,7 @@
+.cover__title-container {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  align-self: center;
+
+  z-index: 1;
+}
