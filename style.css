@@ -126,6 +126,8 @@
 
 @media screen and (max-width: 767px) {
   .header__title {
+    max-width: 288px;
+
     font: 900 40px/44px 'Inter', sans-serif;
   }
 }
@@ -145,6 +147,8 @@
 
 @media screen and (max-width: 767px) {
   .header__subtitle {
+    max-width: 288px;
+
     font: 400 16px/20px 'Inter', sans-serif;
   }
 }
@@ -159,6 +163,7 @@
 
 @media screen and (max-width: 1279px) {
   .header__image-container {
+    max-width: 1183px;
     width: calc(100% - 96px);
   }
 }
@@ -285,6 +290,8 @@
   display: grid;
   grid-template-columns: repeat(4, calc((100% - 48px) / 4));
   gap: 16px;
+
+  padding-bottom: 12px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -298,6 +305,8 @@
   .image-gallery {
     grid-template-columns: repeat(2, calc((100% - 16px) / 2));
     gap: 16px;
+
+    padding-bottom: 15px;
   }
 }
 
@@ -305,6 +314,8 @@
   .image-gallery {
     grid-template-columns: 100%;
     row-gap: 12px;
+
+    padding-bottom: 14px;
   }
 }
 
@@ -323,7 +334,7 @@
   row-gap: 48px;
 
   margin: 0 auto;
-  padding: 92px 148px 0;
+  padding: 80px 148px 0;
 }
 
 @media screen and (max-width: 1279px) {
@@ -338,11 +349,17 @@
 
 @media screen and (max-width: 1023px) {
   .place {
-    grid-template-columns: minmax(340px, 440px) minmax(352px, 456px);
+ /* grid-template-columns: minmax(340px, 440px) minmax(352px, 456px); */
+
+    grid-template-columns: minmax(340px, 466px) minmax(352px, 482px);
     column-gap: 28px;
 
-    padding-right: calc((100% - 720px) / 2);
-    padding-left: calc((100% - 720px) / 2);
+ /* padding-right: calc((100% - 720px) / 2);
+    padding-left: calc((100% - 720px) / 2); */
+
+    padding-top: 73px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
 
@@ -351,6 +368,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    padding: 50px 0 0;
   }
 }
 
@@ -376,6 +395,7 @@
 
 @media screen and (max-width: 767px) {
   .place__title {
+    padding-right: 16px;
     padding-left: 16px;
 
     font: 900 32px/35px 'Inter', sans-serif;
@@ -401,6 +421,10 @@
   color: #fff;
 
   font: 400 18px/29.34px 'Inter', sans-serif;
+}
+
+.place__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -464,7 +488,19 @@
   grid-template-columns: 100%;
   grid-template-rows: 1fr;
 
-  margin: 12px 0;
+  padding: 92px 48px 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover {
+    padding: 90px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover {
+    padding: 66px 0 0;
+  }
 }
 
 .cover:hover .cover__image {
@@ -478,6 +514,7 @@
   width: 100%;
 
   opacity: 0.7;
+
   transition: opacity 0.15s ease;
 }
 
@@ -521,8 +558,7 @@
 
 @media screen and (max-width: 767px) {
   .cover__title {
-    padding-right: 16px;
-    padding-left: 16px;
+    max-width: 250px;
 
     font: 900 32px/35px 'Inter', sans-serif;
   }
@@ -548,6 +584,8 @@
 
 @media screen and (max-width: 767px) {
   .cover__subtitle {
+    max-width: 288px;
+    
     padding-right: 16px;
     padding-left: 16px;
 
@@ -561,14 +599,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  padding: 80px 0 24px;
+  padding: 92px 48px 24px;
 }
 
 @media screen and (max-width: 1023px) {
   .footer {
-    padding-top: 76px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding: 88px 24px 24px;
   }
 }
 
@@ -578,9 +614,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    padding-top: 64px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 64px 16px 24px;
   }
 }
 
@@ -597,11 +631,9 @@
   .footer__links {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
+    justify-content: space-between;
+
+    min-height: 248px;
   }
 }
 
@@ -626,17 +658,8 @@
   opacity: 0.7;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__link-item {
-    
-    margin: 32px 0 0;
-
-    font: 400 24px/24px 'Inter', sans-serif;
-  }
-}
-
 .footer__author {
-  min-width: max-content;
+  align-self: flex-end;
 
   margin: 0;
   padding: 0;
@@ -648,9 +671,9 @@
 
 @media screen and (max-width: 767px) {
   .footer__author {
+    align-self: flex-start;
     
     margin-top: 48px;
-    padding-left: 16px;
 
     font: 400 14px/14px 'Inter', sans-serif;
   }
