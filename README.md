@@ -19,6 +19,6 @@ The purpose of the site is to gain skills in the use of technology Flex, Grid an
 - $ surge
 - project: ../russian-travel
 
-#### Website links;
+#### Website links:
 - https://programistic.github.io/russian-travel/
 - https://childlike-humor.surge.sh/
